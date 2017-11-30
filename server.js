@@ -32,8 +32,8 @@ wss.broadcast = function broadcast(data) {
   });
 };
 
-//var iotHubReader = new iotHubClient(process.env['Azure.IoT.IoTHub.ConnectionString'], process.env['Azure.IoT.IoTHub.ConsumerGroup']);
-var iotHubReader = new iotHubClient("HostName=IoTExample.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=ij2nusyAfXbgrVB3r1+GWkaQi4Fll50pS21IZtYQAhI=", "sensorconsumergroup");
+var iotHubReader = new iotHubClient(process.env['Azure.IoT.IoTHub.ConnectionString'], process.env['Azure.IoT.IoTHub.ConsumerGroup']);
+//var iotHubReader = new iotHubClient("HostName=IoTExample.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=ij2nusyAfXbgrVB3r1+GWkaQi4Fll50pS21IZtYQAhI=", "sensorconsumergroup");
 iotHubReader.startReadMessage(function (obj, date) {
   try {
     console.log(date);
