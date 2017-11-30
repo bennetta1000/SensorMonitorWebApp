@@ -4,7 +4,6 @@ const WebSocket = require('ws');
 const moment = require('moment');
 const path = require('path');
 const iotHubClient = require('./IoTHub/iot-hub.js');
-var dotenv = require('dotenv');
 
 const app = express();
 
@@ -15,8 +14,6 @@ app.use(function (req, res/*, next*/) {
 
 const server = http.createServer(app);
 const wss = new WebSocket.Server({ server });
-
-dotenv.load;
 
 // Broadcast to all.
 wss.broadcast = function broadcast(data) {
