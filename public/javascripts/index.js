@@ -7,7 +7,7 @@ $(document).ready(function () {
     datasets: [
       {
         fill: false,
-        label: 'Temperature',
+        label: 'Temperature yo',
         yAxisID: 'Temperature',
         borderColor: "rgba(45, 76, 200, 1)",
         pointBoarderColor: "rgba(255, 204, 0, 1)",
@@ -18,7 +18,7 @@ $(document).ready(function () {
       },
       {
         fill: false,
-        label: 'Humidity',
+        label: 'Humidity yo',
         yAxisID: 'Humidity',
         borderColor: "rgba(0, 300, 150, 1)",
         pointBoarderColor: "rgba(24, 120, 240, 1)",
