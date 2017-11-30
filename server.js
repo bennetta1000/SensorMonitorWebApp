@@ -4,6 +4,7 @@ const WebSocket = require('ws');
 const moment = require('moment');
 const path = require('path');
 const iotHubClient = require('./IoTHub/iot-hub.js');
+var dotenv = require('dotenv');
 
 const app = express();
 
@@ -14,6 +15,8 @@ app.use(function (req, res/*, next*/) {
 
 const server = http.createServer(app);
 const wss = new WebSocket.Server({ server });
+
+dotenv.load;
 
 // Broadcast to all.
 wss.broadcast = function broadcast(data) {
@@ -29,7 +32,8 @@ wss.broadcast = function broadcast(data) {
   });
 };
 
-var iotHubReader = new iotHubClient(process.env['Azure.IoT.IoTHub.ConnectionString'], process.env['Azure.IoT.IoTHub.ConsumerGroup']);
+//var iotHubReader = new iotHubClient(process.env['Azure.IoT.IoTHub.ConnectionString'], process.env['Azure.IoT.IoTHub.ConsumerGroup']);
+var iotHubReader = new iotHubClient("HostName=IoTExample.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=ij2nusyAfXbgrVB3r1+GWkaQi4Fll50pS21IZtYQAhI=", "sensorconsumergroup");
 iotHubReader.startReadMessage(function (obj, date) {
   try {
     console.log(date);
