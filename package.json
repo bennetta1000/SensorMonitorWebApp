@@ -3,8 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node server.js",
-    
+    "start": "node server.js"
   },
   "dependencies": {
     "azure-event-hubs": "0.0.8",
