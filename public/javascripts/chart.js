@@ -3,7 +3,7 @@ var popCanvas = document.getElementById("popChart");
 var barChart = new Chart(popCanvas, {
   type: 'bar',
   data: {
-    labels: ["China", "India", "United States", "Indonesia", "Brazil", "Pakistan", "Nigeria", "Bangladesh", "Russia", "Japan"],
+    labels: ["Chiiiiiiiiiina", "India", "United States", "Indonesia", "Brazil", "Pakistan", "Nigeria", "Bangladesh", "Russia", "Japan"],
     datasets: [{
       label: 'Population',
       data: [1379302771, 1281935911, 326625791, 260580739, 207353391, 204924861, 190632261, 157826578, 142257519, 126451398],
