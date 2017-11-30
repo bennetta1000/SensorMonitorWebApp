@@ -33,12 +33,12 @@ $(document).ready(function () {
   var basicOption = {
     title: {
       display: true,
-      text: 'Temperature & Humidity Real-time Data',
+      text: 'Temperature & Humidity Real-time Data yo',
       fontSize: 36
     },
     scales: {
       yAxes: [{
-        id: 'Temperature',
+        id: 'Temperature yo',
         type: 'linear',
         scaleLabel: {
           labelString: 'Temperature(C)',
@@ -46,7 +46,7 @@ $(document).ready(function () {
         },
         position: 'left',
       }, {
-          id: 'Humidity',
+          id: 'Humidity yo',
           type: 'linear',
           scaleLabel: {
             labelString: 'Humidity(%)',
