@@ -40,6 +40,10 @@ $(document).ready(function () {
       yAxes: [{
         id: 'Temperature',
         type: 'linear',
+        ticks: {
+        	suggestedMin: -10,
+        	suggestedMax: 40
+        },
         scaleLabel: {
           labelString: 'Temperature(C)',
           display: true
@@ -48,6 +52,10 @@ $(document).ready(function () {
       }, {
           id: 'Humidity',
           type: 'linear',
+          ticks: {
+          	suggestedMin: 0,
+          	suggestedMax: 100
+          },
           scaleLabel: {
             labelString: 'Humidity(%)',
             display: true
