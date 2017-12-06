@@ -41,8 +41,8 @@ $(document).ready(function () {
         id: 'Temperature',
         type: 'linear',
         ticks: {
-        	suggestedMin: -10,
-        	suggestedMax: 40
+        	suggestedMin: 0,
+        	suggestedMax: 30
         },
         scaleLabel: {
           labelString: 'Temperature(C)',
